@@ -14,7 +14,7 @@ int main(int argc, char** argv){
     int* counts_reference = (int*)malloc(max * sizeof(int)); // Compute sequentially and use for error checks
     // Generate random array
     for(unsigned long i = 0; i < ARRAY_SIZE; i++){
-        array[i] = rand() % max;        
+        array[i] = rand() % max;
     }
 
     // Compute reference counts for error check
@@ -51,8 +51,8 @@ int main(int argc, char** argv){
 
         #pragma omp for
         for(int t = 0; t < omp_get_num_threads(); t++){
-            for(unsigned long i = 0; i < max; i++){    
-                #pragma omp atomic        
+            for(unsigned long i = 0; i < max; i++){
+                #pragma omp atomic
                 counts[i] += counts_local[t][i];
             }
         }
@@ -65,7 +65,7 @@ int main(int argc, char** argv){
             fprintf(stderr, "Error: counts[%lu] = %d, counts_reference[%lu] = %d\n", i, counts[i], i, counts_reference[i]);
             return 1;
         }
-        printf("%d elements with value %ld\n", counts[i], i);
+        //printf("%d elements with value %ld\n", counts[i], i);
     }
     printf("Total runtime: %f secs\n", stop - start);
 
@@ -73,7 +73,7 @@ int main(int argc, char** argv){
         free(counts_local[i]);
     }
     free(counts_local);
-    free(counts_reference);    
+    free(counts_reference);
     free(counts);
     free(array);
     return 0;

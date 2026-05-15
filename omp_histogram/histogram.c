@@ -14,7 +14,7 @@ int main(int argc, char** argv){
     int* counts = (int*)malloc(max * sizeof(int));
     // Generate random array
     for(unsigned long i = 0; i < ARRAY_SIZE; i++){
-        array[i] = rand() % max;        
+        array[i] = rand() % max;
     }
 
     double start = omp_get_wtime();
@@ -28,10 +28,10 @@ int main(int argc, char** argv){
     double stop = omp_get_wtime();
 
     for(unsigned long i = 0; i < max; i++){
-        printf("%d elements with value %ld\n", counts[i], i);
+        //printf("%d elements with value %ld\n", counts[i], i);
     }
     printf("Total runtime: %f secs\n", stop - start);
-    
+
     free(counts);
     free(array);
     return 0;

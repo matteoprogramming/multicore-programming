@@ -1,0 +1,35 @@
+BSD 3-Clause License
+
+Copyright (c) 2026 Matteo
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of my original materials must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+3. Neither my name nor the names of contributors may be used to endorse
+   or promote products derived from my original materials without specific
+   prior written permission.
+
+This license applies ONLY to content originally created by me, including:
+- Markdown documentation
+- personal notes
+- theoretical explanations
+- study materials
+
+This license DOES NOT apply to the original course code and materials from the
+upstream repository:
+https://github.com/DanieleDeSensi/multicore-programming
+
+THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE MATERIALS OR THE USE OR OTHER DEALINGS IN THE
+MATERIALS.
